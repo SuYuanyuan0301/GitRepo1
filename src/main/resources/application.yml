@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/big_event
+    username: root
+    password: 123456
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    # 开启驼峰命名和下划线命名映射（原因是User类中的创建时间为createTime，但再数据库中是以create——time存储的）
